@@ -26,8 +26,8 @@ namespace mariasaldivar.Function
             name = name ?? data?.name;
 
             return name != null
-                ? (ActionResult)new OkObjectResult($"Ok {name} tus cambios estan deployados")
-                : new BadRequestObjectResult("Please pass a name on the query string or in the request body");
+                ? (ActionResult)new OkObjectResult($"Ok {name} tus cambios estan en la rama, test deployment pull request")
+                : new BadRequestObjectResult("Please pass a name on the query string or in the request body, to test pull request");
         }
     }
 }
